@@ -77,11 +77,11 @@ with st.expander('Data Preparation'):
 ## Model Training and Inference
 ## Train the ML Model
 clf = RandomForestClassifier()
-clf.fit(X,y)
+clf.fit(X, y)
 
 ## Apply the model to make predictions
-predicitons = clf.predict(input_row)
+prediciton = clf.predict(input_row)
 prediciton_proba = clf.predict_proba(input_row)
 
-prediction_proba
-## 
+
+#
