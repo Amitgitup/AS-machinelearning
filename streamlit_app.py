@@ -5,5 +5,5 @@ st.title('🤖 Machine Learning App')
 
 st.info('This app builds a machine learning model!')
 
-df = pd.read_csv('https://github.com/Amitgitup/AS-machinelearning/blob/master/penguins_cleaned.csv')
+df = pd.read_csv('penguins_cleaned.csv')
 df
