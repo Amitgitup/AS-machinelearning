@@ -5,7 +5,7 @@ st.title('🤖 Machine Learning App')
 
 st.info('This app builds a machine learning model!')
 
-with st.expander(data):
+with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('penguins_cleaned.csv')
   df
