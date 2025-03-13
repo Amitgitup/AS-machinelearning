@@ -72,4 +72,14 @@ with st.expander('Data Preparation'):
   st.write("**Encoded Y**")
   y
   
+## Model Training and Inference
+## Train the ML Model
+clf = RandomForestClassifier()
+clf.fit(X_raw,y)
 
+## Apply the model to make predictions
+predicitons = clf.predict(input_row)
+prediciton_proba = clf.predict_proba(input)
+
+prediction_proba
+## 
