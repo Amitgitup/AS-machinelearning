@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd 
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('🤖 Machine Learning App')
 
@@ -64,8 +65,6 @@ with st.expander('Input Features'):
     return target_mapper[val] 
 
 y = y_raw.apply(target_encode)
-y
-y_raw
 
 with st.expander('Data Preparation'): 
   st.write('**Encoded X (Input Penguin)**')
