@@ -21,3 +21,9 @@ with st.expander('Data'):
 with st.expander('Data Visualization'):
   # "bill_length_mm","bill_depth_mm_","flipper_length_mm","flipper_lenth_mm","body_mass_g"
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+
+## Data Preparations
+with st.sidebar:
+  st.header('Input Features')
+  ## species	island	bill_length_mm	bill_depth_mm	flipper_length_mm	body_mass_g	sex
+  island = st.selectbox("Island", ("Biscoe", "Dream", "Toegersen"))
