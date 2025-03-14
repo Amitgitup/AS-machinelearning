@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import pandas as pd 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -84,9 +85,11 @@ prediciton = clf.predict(input_row)
 prediciton_proba = (clf.predict_proba(input_row)).reshape(1,3)
 
 df_prediction_proba = pd.DataFrame(prediciton_proba, columns = ["Adelie","Chinstrap","Gentoo"])
-## df_prediction_proba.column = ["Adelie","Chinstrap","Gentoo"]
+
+## Display Predicted Species
+st.subheader("Predicted Species")
 df_prediction_proba
-
-
+penguins_species = np.array(['Adelie','Chinstrap','Gentoo'])
+st.success(str(penguins_species[prediction][0]))
 
 
