@@ -88,7 +88,7 @@ df_prediction_proba = pd.DataFrame(prediciton_proba, columns = ["Adelie","Chinst
 
 ## Display Predicted Species
 st.subheader("Predicted Species")
-st.DataFrame(df_prediction_proba, 
+st.dataframe(df_prediction_proba, 
              column_config={
                "Adelie": st.column_config.ProgressColumn(
                  'Adelie',
